@@ -46,7 +46,7 @@ class Rectangle
   end
 
   def to_s
-    string = <<-EOF
+    <<-EOF
 Rectangle:
 width: #{width}\theight: #{height}
 x: #{x}\t\ty: #{y}

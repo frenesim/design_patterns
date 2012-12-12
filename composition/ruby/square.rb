@@ -34,7 +34,7 @@ class Square
   end
 
   def to_s
-    string = <<-EOF
+    <<-EOF
 Square:
 width: #{width}\theight: #{height}
 x: #{x}\t\ty: #{y}
