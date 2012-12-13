@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'observer'
 require 'temperature_alerter'
 require 'temperature'
@@ -21,8 +22,8 @@ class Termometer
         last_temp = temp
         notify_observers(Time.now.utc, temp)
       end
-      print "\r#{temp}"
-      sleep 0.5
+      print " #{Time.now.utc.to_s}: #{temp} º.C  \r"
+      sleep 1
     end
   end
 end
